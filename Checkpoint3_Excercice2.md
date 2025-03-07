@@ -192,5 +192,8 @@ nft add rule inet filter output ip daddr 192.168.1.0/24 tcp sport {9101, 9102, 9
 
 ### Q.2.6.1
 
+Pour afficher les logs d'échecs de connexion j'ai fais:
 
+grep "Failed password" | cat /var/log/auth.log | tail -n 10 > logg.txt
 
+<img src="img/last.png" alt="last" width="800"/>
